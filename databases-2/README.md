@@ -2,6 +2,24 @@
 
 This README provides an overview of the General Insurance Database, a system designed to manage insurance products and policies. The database is implemented with SQL queries for policy statistics and customer costs. Below, you'll find information on the database schema, constraints and the associated PHP scripts for interacting with the database.
 
+## Hotel Room Reservation System
+
+### Overview
+
+This project aims to create a hotel room reservation system with the following key features:
+
+1. **Home Page**: The Home page provides essential information about the hotel, including its category, offered services, the number of rooms, and more. It features photos of the hotel and the surrounding area, along with the hotel's address and contact details.
+
+2. **Rooms Page**: The Rooms page offers descriptions and images of various room types, such as single, double, triple, and quadruple rooms.
+
+3. **Reservation Page**: On the Reservation page, users can make bookings for one or more rooms during specific date ranges. To complete a reservation, users are required to fill out a contact information form.
+
+4. **Contact Page**: The Contact page allows users to send messages or inquiries to the hotel.
+
+#### Development Platform
+
+This system will be developed using the XAMPP platform.
+
 ## Database Design
 
 ### Tables
