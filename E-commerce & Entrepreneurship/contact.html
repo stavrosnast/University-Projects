@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Generic Settings -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Styles -->
+    <link href="css/header.css" rel="stylesheet"> <!-- Link to the header styles -->
+    <link rel="stylesheet" href="./css/contract.css"> <!-- Link to the home page styles -->
+    <link rel="stylesheet" href="./css/footer.css"> <!-- Link to the footer styles -->
+    <link rel="shortcut icon" type="image/png" href="./imgs/favicon.png"/>
+</head>
+<body>
+<!-- Start of the header section -->
+<header>
+    <nav>
+        <div class="logo">
+            <h4>Gilgamesh Hotel</h4> <!-- Hotel logo or brand name -->
+        </div>
+        <ul class="nav-links">
+            <!-- Navigation links with icons -->
+            <li><a href="./home.html"><i class="fa-solid fa-door-closed"></i> Home</a></li>
+            <li><a href="./rooms.html"><i class="fa-solid fa-bed"></i> Rooms</a></li>
+            <li><a href="./reservation.html"><i class="fa-solid fa-suitcase"></i> Reservation</a></li>
+            <li><a href="./contact.html"><i class="fa-solid fa-map"></i> Contact</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-bell-concierge"></i> About Us</a></li>
+        </ul>
+        <div class="menu_nav">
+            <div class="line1"></div> <!-- Three lines for menu navigation icon -->
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</header>
+<!-- End of the header section -->
+<!-- Start of content -->
+<div class="contactUs">
+    <div class="title">
+        <h2>Contact Us Now!</h2> <!-- Title for the Contact Us section -->
+    </div>
+    <div class="box">
+        <!-- Contact Form -->
+        <div class="contact form">
+            <h3>Send us a Message!</h3> <!-- Form title -->
+            <form action="db/contactform.html" method="post">
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input name="fName" placeholder="Stavros" type="text">
+                        </div>
+                        <div class="inputBox">
+                            <span>Last Name</span>
+                            <input name="lName" placeholder="Nastoulis" type="text">
+                        </div>
+                    </div>
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>E-mail</span>
+                            <input name="email" placeholder="example@email.com" type="text">
+                        </div>
+                        <div class="inputBox">
+                            <span>Telephone</span>
+                            <input name="telephone" placeholder="+30 6900000000" type="text">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Message</span>
+                            <textarea name="message" placeholder="Write your message here.."> </textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="submit" name="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- End of Contact Form -->
+        </div>
+        <!-- Contact Info -->
+        <div class="contact info">
+            <h3>Contact Info</h3> <!-- Info title -->
+            <div class="infoBox">
+                <div>
+                    <span><ion-icon name="map-outline"></ion-icon></span>
+                    <p>Ermou, Athens, Greece</p> <!-- Address information -->
+                </div>
+                <div>
+                    <span><ion-icon name="mail-unread-outline"></ion-icon></span>
+                    <a href="mailto:info@gilgameshhotel.com">info@gilgameshhotel.com</a> <!-- Email address -->
+                </div>
+                <div>
+                    <span><ion-icon name="call-outline"></ion-icon></span>
+                    <a href="tel:+30 6900000000">+30 6900000000</a> <!-- Phone number -->
+                </div>
+                <!-- Social Media Icons -->
+                <ul class="sci">
+                    <li><a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+                <!-- End of Social Media Icons -->
+            </div>
+        </div>
+        <!-- End of Contact Info -->
+        <!-- Map -->
+        <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.008510614393!2d23.7244758!3d37.9769307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd2255a825e7%3A0x1553654e7aa8a6c4!2zzpXPgc68zr_PjSwgzpHOuM6uzr3OsQ!5e0!3m2!1sel!2sgr!4v1654791121419!5m2!1sel!2sgr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Google Maps iframe -->
+        </div>
+        <!-- End of Map -->
+    </div>
+</div>
+<!-- End of content -->
+<!-- Start of the Footer section -->
+<footer>
+    <div class= "footer-content">
+        <h3>ΗΛΕΚΤΡΟΝΙΚΟ ΕΜΠΟΡΙΟ ΚΑΙ ΕΠΙΧΕΙΡΗΜΑΤΙΚΟΤΗΤΑ (ICE1-8107)</h3>
+        <p>The above page is the final project "Hotel Room Reservation"</p> <!-- Footer content and project description -->
+        <!-- Social Media Icons -->
+        <ul class="socials">
+            <li><a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li><a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <!-- End of Social Media Icons -->
+    </div>
+    <div class ="footer-bottom">
+        <p>Copyright &copy; 2022 . Developed by student <span>Stavros Nastoulis</span></p> <!-- Copyright and developer information -->
+    </div>
+</footer>
+<!-- End of the Footer section -->
+<!-- Scripts -->
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script src="./js/header.js"></script> <!-- Include JavaScript files -->
+<!-- End of Scripts -->
+</body>
+</html>

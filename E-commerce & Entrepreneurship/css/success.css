@@ -1,0 +1,15 @@
+/* Set the background color for the entire body */
+body {
+    background: #F09819;
+}
+
+/* Define styles for the h1 element */
+h1 {
+    color: #fff; /* Text color is white */
+    text-align: center; /* Center-align the text */
+    margin-top: 8rem; /* Add a top margin of 8rem (adjust as needed) */
+    font-size: 7rem; /* Set the font size to 7rem (adjust as needed) */
+    font-family: 'Montserrat-Black', sans-serif; /* Specify the font family */
+    height: 35vw; /* Set the height to 35vw (adjust as needed) */
+    width: 100%; /* Set the width to 100% to span the entire container */
+}

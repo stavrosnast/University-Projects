@@ -1,0 +1,126 @@
+/* Universal settings that apply to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the header elements */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling for the logo */
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/* Styling for navigation links container */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+/* Remove list-style and style the list items */
+.nav-links li {
+    list-style: none;
+}
+
+/* Styling for navigation links */
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Styling for the mobile menu icon */
+.menu_nav {
+    display: none;
+    cursor: pointer;
+}
+
+.menu_nav div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive design for larger screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+/* Responsive design for smaller screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1; /* fix overlapping */
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .menu_nav {
+        display: block;
+    }
+}
+
+/* Activate mobile navigation menu */
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* Animation for fading in navigation links */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Animation for the X icon */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

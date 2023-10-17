@@ -1,0 +1,46 @@
+<?php
+/* Connection details to the database */
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "HOTEL_DB";
+
+/* Create a new mysqli object */
+$mysqli = new mysqli($servername, $username, $password, $dbname);
+
+/* Check the connection */
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
+
+/*
+ * If the "submit" button is clicked, we set the data provided by the user. Then, we check the dates provided
+ * for availability and store the result of the search in a new variable. Finally, if more than 0 results are found,
+ * we return to the reservation page; otherwise, we insert the new reservation into the database and redirect the
+ * customer to a new page displaying a successful reservation message.
+ */
+if (isset($_POST['submit'])) {
+    $fName = $_POST['firstname'];
+    $lName = $_POST['lastname'];
+    $phoneNumber = $_POST['phone-number'];
+    $email = $_POST['email'];
+    $arrDay = $_POST['arrival-day'];
+    $depDay = $_POST['departure-day'];
+    $numPeople = $_POST['number_people'];
+    $rtype = $_POST['room_type'];
+
+    $sql = "SELECT `RESERVATIONS_ID` FROM `RESERVATIONS` WHERE (`ROOM_TYPE` = '$rtype') AND (`CHECKINDATE` <= '$arrDay') AND (`CHECKOUTDATE` >= '$depDay')";
+    $result = $mysqli->query($sql);
+
+    if ($result->num_rows > 0) {
+        header("Location: http://localhost:80/GilgameshHotel/reservation.php");
+    } else {
+        $res_query = "INSERT INTO `RESERVATIONS`(`FIRSTNAME`, `LASTNAME`, `EMAIL`, `TELEPHONE`,`CHECKINDATE`,`CHECKOUTDATE`,`NUM_PEP`,`ROOM_TYPE`) VALUES ('$fName','$lName','$email','$phoneNumber','$arrDay','$depDay','$numPeople','$rtype')";
+        $stmt = $mysqli->prepare($res_query);
+        $stmt->execute();
+        $stmt->close();
+        $mysqli->close();
+        header("Location: http://localhost:80/GilgameshHotel/php/success.php");
+    }
+}
+?>

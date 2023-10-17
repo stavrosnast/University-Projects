@@ -1,0 +1,100 @@
+/* Reset default margin and set box-sizing for all elements */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    background: #fcfcfc;
+}
+
+/* Define styles for the general footer */
+footer {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto;
+    padding-top: 40px;
+    background-color: #111;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+/* Define styles for the footer content container */
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Define styles for the h3 heading within the footer content */
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+/* Define styles for the paragraph within the footer content */
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* Define styles for the social icons container */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+/* Define styles for the list items (social icons) within the socials container */
+.socials li {
+    margin: 0 10px;
+}
+
+/* Define styles for anchor links within the socials container */
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Define styles for list items (li) within anchor links for social icons */
+.socials a li {
+    font-size: 1.1rem;
+    transition: color 1s ease;
+}
+
+/* Define styles for the color change on social icons when hovered */
+.socials a:hover ion-icon {
+    color: aqua;
+}
+
+/* Define styles for the footer bottom container */
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Define styles for the paragraph within the footer bottom container */
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: none;
+}
+
+/* Define styles for the inline container within the footer bottom */
+.footer-bottom span {
+    text-transform: none;
+    opacity: .4;
+    font-weight: 200;
+}

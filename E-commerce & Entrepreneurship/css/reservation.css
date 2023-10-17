@@ -1,0 +1,68 @@
+/* Set appropriate styles for the form element */
+#form {
+    background-color: white;
+    height: 32vw;
+    width: 800px;
+    margin: 100px auto auto;
+    opacity: 90%;
+}
+
+/* Set the footer to remain at the bottom of the page */
+footer {
+    bottom: 0;
+}
+
+/* Define styles for the first-group */
+#first-group {
+    border: none;
+    width: 400px;
+    margin-top: 38px;
+    position: absolute;
+}
+
+/* Define styles for the content section */
+#content {
+    border: 1px solid #fff;
+    margin: 10px 10px 10px 8px;
+    padding: 5px;
+}
+
+/* Define styles for the input-group within the content */
+#content #input-group {
+    border: none;
+    outline: none;
+    background: black;
+    margin-left: 8px;
+    width: 300px;
+    color: #fff;
+}
+
+/* Set color for the text in the placeholder */
+::placeholder {
+    color: #fff;
+}
+
+/* Define styles for the second-group */
+#second-group {
+    border: none;
+    width: 400px;
+    margin-top: 55px;
+    margin-left: 400px;
+}
+
+/* Define styles for the submit-btn */
+#submit-btn {
+    margin-top: 30px;
+    margin-left: 600px;
+    background: transparent;
+    width: 150px;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Set the background color of the content section to black */
+#content {
+    background-color: black;
+}

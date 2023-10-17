@@ -1,0 +1,260 @@
+/* Reset default styles for multiple elements */
+* {
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Define styles for elements with the "title" class */
+.title {
+    color: black;
+}
+
+/* Define styles for the "contactUs" class */
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+/* Define styles for the "title" within the "contactUs" class */
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+/* Define styles for the "form" element */
+.form {
+    grid-area: form;
+}
+
+/* Define styles for the "info" element */
+.info {
+    grid-area: info;
+}
+
+/* Define styles for the "map" element */
+.map {
+    grid-area: map;
+}
+
+/* Define styles for the "contact" class */
+.contact {
+    padding: 90px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Define styles for the "box" class */
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+        "form info"
+        "form  map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+/* Define styles for the h3 within the "contact" class */
+.contact h3 {
+    color: black;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px; /* Fixed the missing colon here */
+}
+
+/* Define styles for the "formBox" class */
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+/* Define styles for the elements with the "row50" class within "formBox" */
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+/* Define styles for the "inputBox" class */
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+/* Define styles for the "inputBox" within "row100" of "formBox" */
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+/* Define styles for the "span" elements within "inputBox" */
+.inputBox span {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Define styles for input elements within "inputBox" */
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+/* Define styles for textarea elements within "inputBox" */
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+/* Define styles for input elements with type "submit" within "inputBox" */
+.inputBox input[type="submit"] {
+    background: black;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+/* Define placeholder text color for input elements within "inputBox" */
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/* Define styles for the "info" class */
+.info {
+    background: black;
+}
+
+/* Define styles for the h3 within the "info" class */
+.info h3 {
+    color: #fff;
+}
+
+/* Define styles for div elements within "infoBox" of the "info" class */
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Define styles for span elements within div elements of "infoBox" in the "info" class */
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Define styles for p elements within div elements of "infoBox" in the "info" class */
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+/* Define styles for anchor links within div elements of "infoBox" in the "info" class */
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Define styles for the "sci" class */
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+/* Define styles for list items within "sci" class */
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+/* Define styles for anchor links within list items of the "sci" class */
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+}
+
+/* Define styles for anchor links within list items of the "sci" class on hover */
+.sci li a:hover {
+    color: #fff;
+}
+
+/* Define styles for the "map" class */
+.map {
+    padding: 0;
+}
+
+/* Define styles for the iframe within the "map" class */
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Add responsive styles based on screen width */
+@media (max-width: 720px) {
+    body {
+        background: black;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+
+    .map {
+        min-height: 300px;
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+}

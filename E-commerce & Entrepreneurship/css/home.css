@@ -1,0 +1,66 @@
+/* Set styles for h2 elements */
+h2 {
+    color: black;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Apply margin-bottom to h2 and p elements */
+h2, p {
+    margin-bottom: 1em;
+}
+
+/* Set styles for all images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Define a class for text centering */
+.text-center {
+    text-align: center;
+}
+
+/* Add padding to sections (top and bottom) */
+section {
+    padding: 4rem 0;
+}
+
+/* Apply increased padding to sections for wider screens */
+@media (min-width: 40em) {
+    section {
+        padding: 7rem 0;
+    }
+}
+
+/* Define a utility class to center content with a maximum width */
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+/* Define a utility class for splitting content */
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apply a different flex direction to the split class for wider screens */
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split > * {
+        flex-basis: 100%;
+    }
+
+    .split > * + * {
+        margin-left: 2em;
+    }
+}
+
+/* Define a narrower container for responsiveness */
+.container--narrow {
+    max-width: 34rem;
+}
