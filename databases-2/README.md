@@ -1,6 +1,4 @@
-# General Insurance Database Readme
-
-This README provides an overview of the General Insurance Database, a system designed to manage insurance products and policies. The database is implemented with SQL queries for policy statistics and customer costs. Below, you'll find information on the database schema, constraints and the associated PHP scripts for interacting with the database.
+# Databases 2 Project
 
 ## Hotel Room Reservation System
 
