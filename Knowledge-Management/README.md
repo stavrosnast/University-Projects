@@ -60,3 +60,7 @@ You can customize or extend these queries as needed for your specific knowledge 
 ## Output
 
 The code will generate bar plots for the executed queries and save them as image files (e.g., `query_00.png`, `query_01.png`, etc.) in the current working directory.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the terms of this license.
