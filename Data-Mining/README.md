@@ -61,3 +61,7 @@ pip install -r requirements.txt
 
 
 **Note:** Ensure that the required datasets, 'xV.mat' and 'mydata.mat', are available in your project directory or update the file paths in the code as necessary.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the terms of this license.
