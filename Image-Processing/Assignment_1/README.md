@@ -1,4 +1,4 @@
-# Image Processing with OpenCV and Python
+# Image Processing with OpenCV and Python Part 1
 
 This project is aimed at introducing students to the field of Image Processing, specifically focusing on tasks such as noise introduction, filtering, and result comparison using the Python programming language and the OpenCV library. We will perform several steps to process images and achieve the desired outcomes.
 
