@@ -109,3 +109,7 @@ print('MAE between original and average blur is: {:.3f}'.format(mae))
 3. Execute the respective code blocks in a Python environment to perform solarization (Code 1) and add noise, denoise, and compare results (Code 2).
 
 4. Observe the output images and comparison metrics for your image processing tasks.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the terms of this license.
