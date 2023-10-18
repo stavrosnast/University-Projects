@@ -31,7 +31,7 @@ The code is organized as follows:
 
 ## Datasets
 
-This project processes two datasets with different training and testing splits:
+This project processes two datasets, which are based on [Animals-10](https://www.kaggle.com/datasets/alessiocorrado99/animals10), with different training and testing splits:
 
 1. The "80/20 Split" dataset.
 2. The "60/40 Split" dataset.
