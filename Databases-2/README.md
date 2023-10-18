@@ -83,3 +83,7 @@ The PHP scripts included in this repository are part of a web application for ma
 4. **view.php**: This script displays all the insurance products (packages) stored in the database, including their attributes.
 
 5. **index.html**: The main menu for the web application with options to view products, view contracts, and perform searches.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE). You are free to use, modify, and distribute it as per the terms of this license.
